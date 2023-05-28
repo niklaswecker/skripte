@@ -2,7 +2,7 @@ sudo mkdir /etc/vaultwarden_data
 sudo docker run -d -it --name bitwarden \
   -e ADMIN_TOKEN=0854oSNNGuMyTIBrBgFfWF91KOE6RQqX7XaC3YZUQ2DL \
   -v /etc/vaultwarden_data:/data/ \
-  -p 8555:80 \
+  -p 8555:8555 \
   -p 3012:3012 \
   --restart=always \
   vaultwarden/server:latest
