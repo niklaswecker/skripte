@@ -1,5 +1,5 @@
-mkdir /etc/vaultwarden_data
-docker run -d -it --name bitwarden \
+sudo mkdir /etc/vaultwarden_data
+sudo docker run -d -it --name bitwarden \
   -e ADMIN_TOKEN=0854oSNNGuMyTIBrBgFfWF91KOE6RQqX7XaC3YZUQ2DL \
   -v /etc/vaultwarden_data:/data/ \
   -p 8555:80 \
