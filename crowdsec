@@ -1,0 +1,8 @@
+apt update
+apt install sudo nano wget curl -y
+curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
+apt install crowdsec -y
+apt install crowdsec-firewall-bouncer -y
+systemctl stop crowdsec
+nano /etc/crowdsec/config.yaml
+systemctl restart crowdsec
